@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AGUASPROYECTO.CLIENTES.ClientePage">
+    <ContentPage.Content>
+        <StackLayout >
+
+
+
+
+            <Label Text="Bienvenidos a Aguas de Honduras"
+                      TextColor="Black"
+                WidthRequest="500"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+            
+            <Image Source="aguas.jpg" WidthRequest="15" HeightRequest="80" VerticalOptions="Fill"
+               HorizontalOptions="Fill"></Image>
+
+            <Label Text="Ingrese el codigo del Cliente"
+                   
+                 TextColor="Black"
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>  
+            <Entry x:Name="Codigo" Keyboard="Numeric"/>
+
+            <Label Text="Ingrese Nombre Completo"
+                      TextColor="Black"
+                
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+            <Entry x:Name="NombreC" Keyboard="Text"/>
+
+          
+
+            <Label Text="Pais/Departamento"
+                      TextColor="Black"
+               
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+            <Entry x:Name="Pais" Keyboard="Text"/>
+            
+           
+            
+            
+            <Label Text="Municipio/ Residencia"
+                 TextColor="Black"
+                WidthRequest="250"
+                HeightRequest="50"
+                Margin="10,0"
+                Padding="10"
+                VerticalOptions="Start"
+                HorizontalOptions="Fill"/>
+            <Entry x:Name="txtMunicipio" Keyboard="Text"/>
+
+           
+
+
+            <Button x:Name="btguardar" Text="Guardar" Clicked="btguardar_Clicked"
+                 VerticalOptions="End"
+                TextColor="Black"
+                BorderColor="Black"
+                BorderWidth="4"
+                WidthRequest="25"
+                HeightRequest="50"/>
+
+            <Button x:Name="btnbuscar" Text="Buscar" Clicked="btnbuscar_Clicked"
+                    VerticalOptions="End"
+                TextColor="Black"
+                BorderColor="Black"
+                BorderWidth="4"
+                WidthRequest="25"
+                HeightRequest="50"/>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+    </ContentPage>
